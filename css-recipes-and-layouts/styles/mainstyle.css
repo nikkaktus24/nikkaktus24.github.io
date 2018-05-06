@@ -1,0 +1,151 @@
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+
+@font-face {
+  font-family: 'Cantarell-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Cantarell-Regular.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: Arial;
+  min-width: 320px;
+  max-width: 100%;
+}
+
+.header
+,.navigation-bar a {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-button
+,.aside-tags
+,.tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.facebook-color {
+  background-color: #3c5a98;
+}
+
+.google-color {
+  background-color: #c25234;
+}
+
+.twitter-color {
+  background-color: #00aced;
+}
+
+.vk-color {
+  background-color: #48729e;
+}
+
+.yandex-color {
+  background-color: #d83933;
+}
+
+/* COMMON HEADER */
+
+.header {
+  width: 100%;
+  height: 170px;
+  padding-top: 10px;
+}
+
+.navigation-wrapper {
+  width: 100%;
+  height: 55px;
+  margin-top: 15px;
+  background-color: #6b9ad0;
+}
+
+.-checked:after  {
+  content: "";
+  position: absolute;
+  transform: translateY(0);
+  margin-top: 35px;
+  width: 24px;
+  height: 14px;
+  background-image: url('../images/-after.png');
+  transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+}
+
+.nav-button {
+  justify-content: center;
+  color: #6b9ad0;
+  width: 45px;
+  height: 52px;
+  background-color: #7ca7d9;
+  cursor: pointer;
+}
+
+/* COMMON ASIDE */
+
+.tag {
+  margin-right: 30px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.tag a:after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 18px;
+  background-image: url('../images/tag.png');
+  margin-top: -2px;
+  margin-left: 1px;
+}
+
+.tag a {
+  font-size: 12px;
+  padding: 2px 2px 2px 9px;
+  color: #fff;
+  background-color: #6794b7;
+}
+
+.content-social-block-mobile li
+,.content-social-block-tablet li
+,.content-social-block-desktop li {
+  cursor: pointer;
+}
+
+.content-loader {
+  width: 48px;
+  height: 48px;
+  background-image: url('../images/loading.png');
+  animation: loading 1s linear infinite;
+  margin-bottom: 20px;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
