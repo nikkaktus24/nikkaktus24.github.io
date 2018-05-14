@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link href="styles/mainstyle.css" rel="stylesheet">
+  <script defer src="scripts/data.js"></script>
+  <script defer src="scripts/Сard.js"></script>
+  <script defer src="scripts/Result.js"></script>
+  <script defer src="scripts/game.js"></script>
+</head>
+<body>
+  <section class="game-block">
+    <h1 class="-white">Memory-Game</h1>
+    <h2>@nikkaktus24</h2>
+    <ul class="navigation-bar">
+      <li id="newGameButton">New Game</li>
+      <li id="newSkirtButton">Skirts Cards</li>
+      <li id="newDiffButton">Game difficultly</li>
+      <li id="lookScore">Look score</li>
+    </ul>
+    <div id="timer" class="timeStat"></div>
+    <section id="gameArea" class="game-area">
+    </section>
+  </section>
+
+  <!-- starting stage -->
+  <section id="regWrapper" class="registration-wrapper">
+    <div class="stages-block">
+      <!-- difficultly -->
+      <div id="stage1" class="registration-stage-wrapper">
+        <div class="registration-first-stage">
+          <h1>Memory-Game</h1>
+          <p>Memory game it's game on your memory. You need to match cards pairs.</p>
+          <p>If cards will match they not rotate. </p>
+          <p>You can choose difficultly of the game and skirt of cards</p>
+          <ul id="diffUl" class="registration-buttons">
+            <li id="easy">Easy</li>
+            <li id="medium">Medium</li>
+            <li id="hard">Hard</li>
+          </ul>
+        </div>
+      </div>
+      <!-- skirt -->
+      <div id="stage2" class="disable registration-stage-wrapper">
+        <div class="registration-second-stage">
+          <h1>Choose a skirt</h1>
+          <ul id="skirtUl" class="registration-skirt">
+            <li id="skirt-one" ></li>
+            <li id="skirt-two" ></li>
+            <li id="skirt-three"></li>
+          </ul>
+        </div>
+      </div>
+      <!-- profile data -->
+      <div id="stage3" class="disable registration-stage-wrapper">
+        <div class="registration-thrid-stage">
+          <h1>Fill in profile</h1>
+          <form class="registration-form">
+            <label>First Name
+              <input placeholder="your first name*" type="text" name="firstname" required="required">
+            </label>
+            <label>Last Name
+              <input placeholder="your last name*" type="text" name="lastname" required="required">
+            </label>
+            <label>Email
+              <input placeholder="your email*" type="email" name="email" required="required">
+            </label>
+            <input id="regButton" value="Let's start!">
+          </form>
+        </div>
+      </div>
+      <!-- congrutalations -->
+      <div id="stage4" class="disable registration-stage-wrapper">
+        <div class="registration-four-stage">
+          <h1>My congrutalations</h1>
+          <p>It didn't was a hard, wasn't it?</p>
+          <p>Try harder difficultly</p>
+        </div>
+      </div>
+      <!-- score -->
+      <div id="stage5" class="disable registration-stage-wrapper">
+        <div class="registration-fifth-stage">
+          <h1>Score Board</h1>
+          <table class="score-table" id="scoreBoard">
+          </table>
+          <div id="scoreCloseButton" class="scoreCloseButton" >Close</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
