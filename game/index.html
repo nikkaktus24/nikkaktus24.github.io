@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Final game by nikkaktus24</title>
+	<script src= "./dist/build/bundle.js" defer></script>
+</head>
+<body>
+	<div class="spinner">
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+  </div>
+	<div id="gameBlock" class="gameBlock disable">
+		<!-- NOTIFACTION BLOCK -->
+		<div id="blockControlWrapper" class="block-control-wrapper">
+			<div class="block-control">
+				<div id="blockChooseName" class="control-choose-name">
+					<h1>Выбор имени для игрока</h1>
+					<p>Для того чтобы начать играть нужно дать имя игроку. Введи имя в поле.</p>
+					<form method="get" name="nicknameForm" action="">
+						<input placeholder="Никнейм" type="text" name="nickname" required="required">
+						<input type="button" id="buttonNickName" name="button" value="Отправить">
+					</form>
+				</div>
+				<div id="blockChooseHero" class="control-choose-heroes disable">
+					<h1>Выбор героя для игры</h1>
+					<p>Для того чтобы начать играть нужно выбрать героя. Кликни на иконку понравившегося героя.</p>
+					<ul id="blockHeroes" class="block-heroes">
+						<li id="0"></li>
+						<li id="1"></li>
+						<li id="2"></li>
+					</ul>
+				</div>
+				<div class="block-exercise disable">
+					<h1>Математическая задача</h1>
+					<p>Для продолжения игры тебе нужно решить математическую задачу. Если ты пропустишь задачу, тогда будет ход врага.</p>
+					<form class="form-canculate" method="post" name="canculateForm" action="">
+						<div id="leftOperand"></div>
+						<div id="execOperator"></div>
+						<div id="rightOperand"></div>
+						<span>=</span>
+						<input placeholder="0" type="text" maxlength="8" name="canculateAnswer" required="required">
+					</form>
+					<div class="control-buttons">
+						<input type="button" class="buttonExec" name="send" value="Отправить">
+						<input type="button" class="buttonRejectExercise" name="reject" value="Отменить">
+					</div>
+				</div>
+				<div class="block-exercise disable">
+					<h1>Задача на словарный запас</h1>
+					<p>Для продолжения игры тебе нужно перевести слово или дописать нехватающую букву. Если ты пропустишь задачу, тогда будет ход врага.</p>
+					<form class="form-double" method="post" name="doubleForm" action="">
+						<div id="englishWord" class="english-word"></div>
+						<input placeholder="Слово" type="text" maxlength="15" name="answerWord" required="required">
+					</form>
+					<div class="control-buttons">
+						<input type="button" class="buttonExec" name="send" value="Отправить">
+						<input type="button" class="buttonRejectExercise" name="reject" value="Отменить">
+					</div>
+				</div>
+				<div class="block-exercise disable">
+					<h1>Задача аудирование</h1>
+					<p>Для продолжения игры тебе нужно ввести слово, которое ты услышишь. Если ты пропустишь задачу, тогда будет ход врага.</p>
+					<form class="form-sound" method="post" name="soundForm" action="">
+						<input placeholder="Слово" type="text" maxlength="15" name="answerWord" required="required">
+						<input type="button" id="buttonListenAgain" name="again" value="Прослушать">
+					</form>
+					<div class="control-buttons">
+						<input type="button" class="buttonExec" name="send" value="Отправить">
+						<input type="button" class="buttonRejectExercise" name="reject" value="Отменить">
+					</div>
+				</div>
+				<div class="block-exercise disable">
+					<h1>Задача на порядок слов</h1>
+					<p>Для продолжения игры тебе нужно восстановить порядок слов в предложении или букв в слове. Если ты пропустишь задачу, тогда будет ход врага.</p>
+					<ul class="block-draggble" id="draggbleList">
+					</ul>
+					<div class="control-buttons">
+						<input type="button" class="buttonExec" name="send" value="Отправить">
+						<input type="button" class="buttonRejectExercise" name="reject" value="Отменить">
+					</div>
+				</div>
+				<div class="block-exercise disable">
+					<h1>Задача на выбор</h1>
+					<p id="taskChoose"></p>
+					<div id="blockCondition" class="block-conditon"></div>
+					<ul id="blockVariants" class="choose-variants">
+					</ul>
+					<div class="control-buttons">
+						<input type="button" class="buttonExec" name="send" value="Отправить">
+						<input type="button" class="buttonRejectExercise" name="reject" value="Отменить">
+					</div>
+				</div>
+				<div class="block-exercise disable">
+					<h1>Задача на сравнение чисел</h1>
+					<p>Для продолжения игры тебе нужно сравнить числа. Если ты пропустишь задачу, тогда будет ход врага.</p>
+					<form class="form-compare" method="post" name="compareForm" action="">
+						<div id="leftCompare"></div>
+						<input placeholder="=" type="text" maxlength="1" name="compareAnswer" required="required">
+						<div id="rightCompare"></div>
+					</form>
+					<div class="control-buttons">
+						<input type="button" class="buttonExec" name="send" value="Отправить">
+						<input type="button" class="buttonRejectExercise" name="reject" value="Отменить">
+					</div>
+				</div>
+				<div class="control-choose-spells disable">
+				</div>
+				<div id="blockScoreboard" class="block-scoreboard disable">
+					<h1>Таблица рекордов</h1>
+					<p>В данную таблицу входит топ 10 рекордов.
+						Если ты не попал сюда, не отчаивайся, попробуй еще раз!
+					</p>
+					<input type="button" id="buttonResetGame" name="reset" value="Новая игра">
+					<table id="scoreBoardTable" class="scoreBoard-table">
+					</table>
+				</div>
+				<div id="blockChooseSpell" class="control-choose-spell disable">
+					<h1>Выберите заклинание</h1>
+					<p>Каждое заклинание отнимает определенное количество HP противника,
+						 и стоит свое количество COIN.
+					</p>
+					<div class="block-coin-count"></div>
+					<div id="blockSpells" class="block-spell-wrapper">
+					</div>
+				</div>
+				<div id="blockAnswer" class="block-answer disable">
+				</div>
+			</div>
+		</div>
+		<div id="blockMessage" class="block-message disable"></div>
+		<!-- GAME BLOCK -->
+
+		<div id="blockGameArea" class="block-gameArea disable">
+			<div class="block-gameHud-wrapper">
+				<div class="block-gameHud">
+					<div class="block-gameHud__hero-name"></div>
+					<div class="block-gameHud-hp-hero">
+						<div id="heroHp" class="block-gameHud__HpLine"></div>
+					</div>
+				</div>
+				<div class="block-gameHud">
+					<div id="gameTimer" class="block-gameHud__timer"></div>
+					<div id="roundNumber" class="block-gameHud__roundNumber"></div>
+				</div>
+				<div class="block-gameHud">
+					<div class="block-gameHud__hero-name"></div>
+					<div class="block-gameHud-hp-enemy">
+						<div id="enemyHp" class="block-gameHud__HpLine"></div>
+					</div>
+				</div>
+			</div>
+			<div class="block-gameFrame">
+				<canvas class="canvasStyle" id="gameArea">
+					Ваш браузер не соответствует последним стандартам. Обновите его для продолжения.
+				</canvas>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
