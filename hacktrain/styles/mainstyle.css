@@ -1,0 +1,450 @@
+@font-face {
+    font-family: 'sanspro_bold';
+    src: url('../fonts/pfbeausanspro-bold-webfont.woff2') format('woff2'),
+         url('../fonts/pfbeausanspro-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'sanspro_light';
+    src: url('../fonts/pfbeausanspro-light-webfont.woff2') format('woff2'),
+         url('../fonts/pfbeausanspro-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'sanspro_thin';
+    src: url('../fonts/pfbeausanspro-thin-webfont.woff2') format('woff2'),
+         url('../fonts/pfbeausanspro-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@keyframes rails {
+	from {
+    background-position: 0px 0px;
+  }
+	to {
+    background-position:  1000px 0px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+._disable {
+  display: none !important;
+}
+
+@keyframes opacityin {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  max-width: 1920px;
+  min-width: 320px;
+  height: 100%;
+  font-family: "sanspro_light";
+}
+
+._fixed {
+  position: fixed !important;
+  left: 0;
+  top: 0;
+}
+
+._backgroundly {
+  background-color: rgba(0,0,0,0.9);
+}
+
+body
+,.header-wrapper
+,.header-body
+,.block-about
+,.animation-block
+,.block-route
+,.block-agenda
+,.block-agenda-wrapper
+,.block-speakers
+,.speaker
+,.block-media
+,.block-faq
+,.block-partners-wrapper
+,.faq-wrapper
+,.block-partners {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-wrapper {
+  z-index: 99;
+  overflow: visible;
+  width: 100%;
+  height: 700px;
+  background: linear-gradient(#1794f2, #7c00ff);
+  background-repeat: no-repeat;
+}
+
+.header-navbar-wrapper
+,.block-owner
+,.navigation-list
+,.agenda-point
+,.speakers-list
+,.faq-title-wrapper
+,.faq
+,.partner-list
+,.gallery
+,.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.header-navbar-wrapper {
+  position: absolute;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+}
+
+.logo a
+,._logo a {
+  font-family: "sanspro_bold";
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s linear;
+}
+
+.logo a:hover {
+  color: #4b0082;
+}
+
+._logo a:hover
+,.faq-title
+,.agenda-date
+,.block-about h1
+,.block-route h1
+,.block-media h1
+,.block-faq h1  {
+  background: -webkit-linear-gradient(#1794f2, #7c00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-navigation {
+  width: 550px;
+}
+
+.navigation-list {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menuToggle {
+  -webkit-user-select: none;
+	cursor: pointer;
+	color: #fff;
+	content: "≡";
+  content: "\2261";
+  font: 3em "arial";
+}
+
+.header-body {
+  margin-top: 200px;
+}
+
+.header-body h1
+,.header-body h2
+,.header-body h3 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.header-body h1 {
+  font-family: "sanspro_bold";
+  font-size: 45px;
+  margin-bottom: 8px;
+}
+
+.header-body h2 {
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.header-body h3 {
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.button {
+  padding: 10px 30px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s linear;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #4b0082;
+}
+
+.block-about h1
+,.block-route h1
+,.block-speakers h1
+,.block-media h1
+,.block-faq h1
+,.block-partners-wrapper h1 {
+  margin-top: 80px;
+  font-family: "sanspro_bold";
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+.block-about h2
+,.block-route h2
+,.block-speakers h2
+,.block-media h2
+,.block-faq h2
+,.block-partners-wrapper h2 {
+  font-size: 15px;
+  margin-bottom: 50px;
+}
+
+.block-about p {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  margin-top: 5px;
+  text-align: justify;
+  overflow: hidden;
+  font-family: 'sanspro_light';
+}
+
+.block-about
+,.block-route
+,.block-speakers
+,.block-media
+,.block-faq
+,.block-partners-wrapper {
+  padding-bottom: 100px;
+}
+
+.block-about
+,.block-media {
+  width: 100%;
+  height: 100%;
+}
+
+.block-route
+,.block-faq {
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+}
+
+.block-agenda {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.agenda-date {
+  font-size: 25px;
+  margin-bottom: 5px;
+  font-family: 'sanspro_bold';
+  text-align: center;
+}
+
+.agenda-point {
+  width: 365px;
+  margin-top: 5px;
+  justify-content: flex-start;
+}
+
+.agenda-point-desc {
+  text-align: left;
+  font-family: 'sanspro_thin';
+}
+
+.agenda-point-time {
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.footer {
+  width: 100%;
+  height: 65px;
+  background-color: #333;
+  color: #fff;
+  font-size: 15px;
+  font-family: "sanspro_thin";
+  align-items: center;
+}
+
+.animation-block {
+  width: 100%;
+  overflow: hidden;
+  height: 150px;
+}
+
+.animation-train {
+  z-index: -1;
+  width: 100%;
+  height: 69px;
+  background-image: url('../images/train.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.animation-rails {
+  z-index: -2;
+  width: 100%;
+  height: 156px;
+  background-image: url('../images/rails.png');
+  background-size: cover;
+  animation: rails 3s linear infinite;
+}
+
+.block-owner {
+  margin-top: 25px;
+  justify-content: space-between;
+  height: 100px;
+  flex-wrap: wrap;
+}
+
+.imaguru-own {
+  width: 150px;
+  height: 150px;
+  background-image: url('../images/logo-imaguru.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.liaa-own {
+  width: 150px;
+  height: 150px;
+  background-image: url('../images/logo-liaa.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.block-speakers
+,.block-partners-wrapper {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: linear-gradient(#1794f2, #7c00ff);
+}
+
+.speakers-list {
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.speaker {
+  margin-top: 15px;
+}
+
+.speaker-img {
+  width: 250px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.speaker-name {
+  font-size: 20px;
+  margin-top: 15px;
+  font-family: 'sanspro_bold';
+}
+
+.speaker-info {
+  font-size: 14px;
+
+}
+
+.irina {
+  background-image: url('../images/irina_levina.png');
+}
+
+.faq-title {
+  font-family: 'sanspro_bold';
+  font-size: 20px;
+}
+
+.block-partners {
+  margin-top: 50px;
+  width: 60%;
+}
+
+.partners-type {
+  font-family: 'sanspro_bold';
+  font-size: 23px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.partner-list {
+  width: 100%;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.partner-list li {
+  margin-top: 20px;
+}
+
+.partner-list img {
+  max-width: 140px;
+  width: 100%;
+}
+
+.gallery {
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.gallery li {
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 280px;
+}

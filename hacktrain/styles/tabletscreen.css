@@ -1,0 +1,73 @@
+.menuToggle {
+  display: none;
+}
+
+.header-navigation {
+  width: 450px;
+}
+
+.header-body h1 {
+  font-size: 40px;
+}
+
+.header-body h2 {
+  font-size: 20px;
+}
+
+.block-about p {
+  width: 80%;
+}
+
+.block-owner {
+  width: 80%;
+}
+
+.navigation-list a {
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 5px 10px;
+  color: #fff;
+  transition: border 0.3s linear;
+  border: 2px solid rgba(0,0,0,0);
+  border-radius: 10px;
+}
+
+.navigation-list li a:hover {
+  border: 2px solid #4b0082;
+}
+
+.animation-block {
+  margin-top: 170px;
+}
+
+.animation-rails {
+  margin-top: -55px;
+}
+
+.faq-title-wrapper {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.faq-title {
+  
+}
+
+.faq-wrapper {
+  width: 100%;
+}
+
+.faq {
+  width: 80%;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.faq-question {
+  font-weight: bold;
+}
+
+.faq-answer {
+  width: 45%;
+}

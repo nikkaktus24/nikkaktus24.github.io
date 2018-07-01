@@ -1,0 +1,59 @@
+.menuToggle {
+  display: none;
+}
+
+.block-about p {
+  width: 55%;
+}
+
+.block-owner {
+  width: 50%;
+}
+
+.navigation-list a {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+  transition: border 0.3s linear;
+  padding: 5px 15px;
+  border: 2px solid rgba(0,0,0,0);
+  border-radius: 10px;
+}
+
+.navigation-list li a:hover {
+  border: 2px solid #4b0082;
+}
+
+.animation-block {
+  margin-top: 160px;
+}
+
+.animation-rails {
+  margin-top: -50px;
+}
+
+.faq-title-wrapper {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.faq-wrapper {
+  width: 100%;
+}
+
+.faq {
+  width: 80%;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.faq-question {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.faq-answer {
+  font-size: 15px;
+  width: 45%;
+}
