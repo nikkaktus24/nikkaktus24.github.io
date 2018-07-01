@@ -106,16 +106,16 @@ body,
   background-repeat: no-repeat;
 }
 
-.header-navbar-wrapper
-,.block-owner
-,.navigation-list
-,.agenda-point
-,.speakers-list
-,.faq-title-wrapper
-,.faq
-,.partner-list
-,.gallery
-,.footer {
+.header-navbar-wrapper,
+.block-owner,
+.navigation-list,
+.agenda-point,
+.speakers-list,
+.faq-title-wrapper,
+.faq,
+.partner-list,
+.gallery,
+.footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
