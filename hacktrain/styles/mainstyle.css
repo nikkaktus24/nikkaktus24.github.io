@@ -76,22 +76,26 @@ body {
   background-color: rgba(0,0,0,0.9);
 }
 
-body,
-.header-wrapper,
-.header-body,
-.block-about,
-.animation-block,
-.block-route,
-.block-agenda,
-.block-agenda-wrapper,
-.block-speakers,
-.speaker,
-.block-media,
-.block-faq,
-.block-partners-wrapper,
-.faq-wrapper,
-.block-partners {
-  display: flex;
+body
+,.header-wrapper
+,.header-body
+,.block-about
+,.animation-block
+,.block-route
+,.block-agenda
+,.block-agenda-wrapper
+,.block-speakers
+,.speaker
+,.block-media
+,.block-faq
+,.block-partners-wrapper
+,.faq-wrapper
+,.block-partners {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -106,17 +110,21 @@ body,
   background-repeat: no-repeat;
 }
 
-.header-navbar-wrapper,
-.block-owner,
-.navigation-list,
-.agenda-point,
-.speakers-list,
-.faq-title-wrapper,
-.faq,
-.partner-list,
-.gallery,
-.footer {
-  display: flex;
+.header-navbar-wrapper
+,.block-owner
+,.navigation-list
+,.agenda-point
+,.speakers-list
+,.faq-title-wrapper
+,.faq
+,.partner-list
+,.gallery
+,.footer {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
@@ -145,8 +153,8 @@ body,
 }
 
 ._logo a:hover
-,.faq-title,
-,.agenda-date,
+,.faq-title
+,.agenda-date
 ,.block-about h1
 ,.block-route h1
 ,.block-media h1
