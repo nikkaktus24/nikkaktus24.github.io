@@ -20,3 +20,9 @@ window.addEventListener('scroll',(e) => {
 menuToggle.addEventListener('click',(e) => {
   navList.classList.toggle("_hidden");
 });
+
+navList.addEventListener('click',(e) => {
+  if(e.target.nodeName == "A") {
+    navList.classList.toggle("_hidden");
+  }
+});

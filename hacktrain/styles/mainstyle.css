@@ -76,21 +76,21 @@ body {
   background-color: rgba(0,0,0,0.9);
 }
 
-body
-,.header-wrapper
-,.header-body
-,.block-about
-,.animation-block
-,.block-route
-,.block-agenda
-,.block-agenda-wrapper
-,.block-speakers
-,.speaker
-,.block-media
-,.block-faq
-,.block-partners-wrapper
-,.faq-wrapper
-,.block-partners {
+body,
+.header-wrapper,
+.header-body,
+.block-about,
+.animation-block,
+.block-route,
+.block-agenda,
+.block-agenda-wrapper,
+.block-speakers,
+.speaker,
+.block-media,
+.block-faq,
+.block-partners-wrapper,
+.faq-wrapper,
+.block-partners {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -145,8 +145,8 @@ body
 }
 
 ._logo a:hover
-,.faq-title
-,.agenda-date
+,.faq-title,
+,.agenda-date,
 ,.block-about h1
 ,.block-route h1
 ,.block-media h1
