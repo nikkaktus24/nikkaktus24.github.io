@@ -91,11 +91,7 @@ body
 ,.block-partners-wrapper
 ,.faq-wrapper
 ,.block-partners {
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
-  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -120,11 +116,7 @@ body
 ,.partner-list
 ,.gallery
 ,.footer {
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
-  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
@@ -269,13 +261,11 @@ body
 .block-about
 ,.block-media {
   width: 100%;
-  height: 100%;
 }
 
 .block-route
 ,.block-faq {
   width: 100%;
-  height: 100%;
   background-color: #f4f4f4;
 }
 
@@ -369,7 +359,6 @@ body
 .block-speakers
 ,.block-partners-wrapper {
   width: 100%;
-  height: 100%;
   color: #fff;
   background: linear-gradient(#1794f2, #7c00ff);
 }
