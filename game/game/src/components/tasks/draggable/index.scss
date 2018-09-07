@@ -1,0 +1,29 @@
+@import '../../../styles/index';
+
+.draggable {
+  @extend %sceneStyle;
+  @include flexbox(column, flex-start, center);
+
+  &-list {
+    width: 400px;
+    margin-bottom: 20px;
+    @include flexbox(row, center, center);
+
+    li {
+      cursor: move;
+      font-size: 20px;
+      -webkit-user-select: none;
+      -webkit-user-drag: element;
+      border-radius: 10px;
+      margin: 1px;
+      padding: 5px 20px;
+      color: #fff;
+      background-color: #ec907e;
+    }
+  }
+
+}
+
+._ghost {
+  opacity: 0.5;
+}

@@ -1,0 +1,11 @@
+.error-bar {
+  padding: 8px 10px;
+  width: 500px;
+  background-color: #c7432a;
+  color: #fff;
+  border-radius: 10px;
+  animation: opacityin 0.5s linear;
+  &:before {
+    content: "Ответ: ";
+  }
+}

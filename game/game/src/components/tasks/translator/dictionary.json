@@ -1,0 +1,12 @@
+{
+  "task": [
+    {"condition":"Cat","answers": ["кот","котик","киса","китя","кошка"]}
+    ,{"condition":"Fire","answers": ["огонь","костер","пламя"]}
+    ,{"condition":"Apple","answers": ["яблоко","яблочко"]}
+    ,{"condition":"Memory","answers": ["память","воспоминание"]}
+    ,{"condition":"Hello","answers": ["привет","здравствуйте"]}
+    ,{"condition":"Sorry","answers": ["извини","прости","сожалею"]}
+    ,{"condition":"Please","answers": ["прошу","пожалуйста"]}
+    ,{"condition":"You're Welcom","answers": ["пожалуйста","добро пожаловать"]}
+  ]
+}

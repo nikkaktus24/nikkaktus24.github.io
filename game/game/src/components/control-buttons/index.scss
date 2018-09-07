@@ -1,0 +1,22 @@
+@import '../../styles/index';
+
+.control-buttons {
+  @include flexbox(row, space-between, center);
+  width: 310px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+  button {
+    width: 150px;
+  }
+
+  button:first-child {
+    border: 2px solid #23ae1e;
+  }
+
+  button:first-child:active {
+    border: 2px solid #23ae1e;
+    background-color: #23ae1e;
+    color: #fff;
+  }
+}

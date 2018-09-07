@@ -1,0 +1,9 @@
+{
+  "task": [
+    {"url": "./src/components/tasks/chooseFlag/images/germany.png", "answer": "Германия", "source": ["Беларусь","Австралия","Уганда" ,"Германия"]}
+    ,{"url": "./src/components/tasks/chooseFlag/images/poland.png", "answer": "Польша", "source": ["Австрия","Польша","Латвия" ,"Новая-Зеландия"]}
+    ,{"url": "./src/components/tasks/chooseFlag/images/lithuania.png", "answer": "Литва", "source": ["Болгария","Литва","Беларусь" ,"Украина"]}
+    ,{"url": "./src/components/tasks/chooseFlag/images/estonian.png", "answer": "Эстония", "source": ["Эстония","Нигер","Сомали" ,"Непал"]}
+    ,{"url": "./src/components/tasks/chooseFlag/images/congolese.png", "answer": "Конго", "source": ["Конго","Магадаскар","ЮАР" ,"США"]}
+  ]
+}

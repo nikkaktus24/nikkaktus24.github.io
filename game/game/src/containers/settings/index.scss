@@ -1,0 +1,16 @@
+@import '../../styles/index';
+
+.settings-screen {
+  @include flexbox(column, flex-start, center);
+  @extend %sceneStyle;
+
+  ul {
+    @include flexbox(column, space-evenly, flex-start);
+    height: 300px;
+
+    button {
+      width: 200px;
+    }
+  }
+  
+}

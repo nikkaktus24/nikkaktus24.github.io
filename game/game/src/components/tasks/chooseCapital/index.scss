@@ -1,0 +1,17 @@
+@import '../../../styles/index';
+
+.choose-capital {
+  @extend %sceneStyle;
+  @include flexbox(column, flex-start, center);
+
+  &-conditon {
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 25px;
+  }
+
+  &-variants {
+    @extend %list-style;
+  }
+
+}

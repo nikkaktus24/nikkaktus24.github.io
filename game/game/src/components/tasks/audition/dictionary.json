@@ -1,0 +1,14 @@
+{
+  "tasks": [
+    {"condition": "кошка","lang":"ru-RU"}
+    ,{"condition": "cat"  ,"lang":"en-US"}
+    ,{"condition": "мама"  ,"lang":"ru-RU"}
+    ,{"condition": "please"  ,"lang":"en-US"}
+    ,{"condition": "пожалуйста"  ,"lang":"ru-RU"}
+    ,{"condition": "woman"  ,"lang":"en-US"}
+    ,{"condition": "man"  ,"lang":"en-US"}
+    ,{"condition": "brother"  ,"lang":"en-US"}
+    ,{"condition": "sister"  ,"lang":"en-US"}
+    ,{"condition": "money"  ,"lang":"en-US"}
+  ]
+}

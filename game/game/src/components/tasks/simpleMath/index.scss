@@ -1,0 +1,16 @@
+@import '../../../styles/index';
+
+.simple-math {
+  @extend %sceneStyle;
+  @include flexbox(column, flex-start, center);
+
+  &-form {
+    @include flexbox(row, space-evenly, center);
+    width: 350px;
+
+    input {
+      width: 100px;
+    }
+  }
+
+}

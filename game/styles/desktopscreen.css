@@ -1,0 +1,23 @@
+.menuToggle {
+  display: none;
+}
+
+.navigation-list a {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+  transition: border 0.3s linear;
+  padding: 5px 15px;
+  border: 2px solid rgba(0,0,0,0);
+  border-radius: 10px;
+}
+
+.navigation-list li a:hover {
+  border: 2px solid #a034fd;
+}
+
+.screen-gallery {
+  width: 1000px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

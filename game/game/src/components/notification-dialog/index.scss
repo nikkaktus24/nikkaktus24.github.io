@@ -1,0 +1,10 @@
+.notification-dialog {
+  position: absolute;
+  color: #fff;
+  font-size: 50px;
+  text-shadow: 1px 1px #000;
+  padding: 20px 50px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 30px;
+  animation: slidein 0.5s linear;
+}

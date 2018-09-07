@@ -1,0 +1,26 @@
+@import '../../styles/index';
+
+.enemyHud {
+  @include flexbox(column, center, flex-end);
+
+  &__name {
+    font-weight: bold;
+    font-size: 17px;
+  }
+
+  &-hp {
+    @include flexbox(row, flex-end, center);
+    width: 200px;
+    height: 20px;
+    margin-top: 5px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #111;
+
+    &__line {
+      height: 20px;
+      background-color: #c12c2c;
+    }
+  }
+}

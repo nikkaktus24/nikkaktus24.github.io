@@ -1,0 +1,19 @@
+@import '../../../styles/index';
+
+.audition {
+  @extend %sceneStyle;
+  @include flexbox(column, flex-start, center);
+
+  &-block {
+      @include flexbox(row, space-between, center);
+      width: 350px;
+
+    &-form {
+      input {
+        width: 200px;
+      }
+
+    }
+  }
+
+}

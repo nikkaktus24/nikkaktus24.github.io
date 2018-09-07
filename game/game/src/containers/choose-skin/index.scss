@@ -1,0 +1,44 @@
+@import '../../styles/index';
+
+.choose-skin-screen {
+  @include flexbox(column, flex-start, center);
+  @extend %sceneStyle;
+
+
+}
+
+.list-heroes {
+  @include flexbox(row, space-between, flex-start);
+  width: 500px;
+
+  li {
+    width: 130px;
+    height: 170px;
+    border: 2px solid #9198e5;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+  }
+
+  li:hover
+  {
+    border: 2px solid #ea3919;
+  }
+
+  li:first-child {
+    background-image: url('../../resources/images/heroes/Dzmitry.png');
+    background-size: 1150px 680px;
+    background-position: 10px 0px;
+  }
+
+  li:nth-child(2) {
+    background-image: url('../../resources/images/heroes/Volha.png');
+    background-size: 1120px 670px;
+    background-position: 15px 0px;
+  }
+
+  li:last-child {
+    background-image: url('../../resources/images/heroes/Mazwai.png');
+    background-size: 1800px 800px;
+    background-position: 5px 0px;
+  }
+}

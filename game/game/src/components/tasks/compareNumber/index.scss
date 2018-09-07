@@ -1,0 +1,17 @@
+@import '../../../styles/index';
+
+.compare-number {
+  @extend %sceneStyle;
+  @include flexbox(column, flex-start, center);
+
+  &-form {
+    @include flexbox(row, space-evenly, center);
+    width: 200px;
+
+    input {
+      width: 50px;
+      text-align: center;
+    }
+  }
+
+}

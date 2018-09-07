@@ -1,0 +1,37 @@
+@mixin flexbox($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+%sceneStyle {
+  margin-bottom: 25px;
+
+  h1 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  p {
+    margin-bottom: 50px;
+    width: 600px;
+    text-align: center;
+  }
+}
+
+%list-style {
+  width: 400px;
+  color: #fff;
+
+  li {
+    font-size: 15px;
+    width: 100%;
+    cursor: pointer;
+    -webkit-user-select: none;
+    border-radius: 10px;
+    margin: 1px;
+    padding: 5px 20px;
+    background-color: #ec907e;
+  }
+}

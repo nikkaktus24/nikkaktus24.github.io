@@ -1,0 +1,9 @@
+{
+  "task": [
+     {"condition":"M_on","answers": "moon"}
+    ,{"condition":"Pl_y_ng","answers": "playing"}
+    ,{"condition":"Q__stion ","answers": "question"}
+    ,{"condition":"Alr__dy","answers": "already"}
+    ,{"condition":"addre__","answers": "address"}
+  ]
+}

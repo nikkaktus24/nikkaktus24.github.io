@@ -1,0 +1,20 @@
+@import '../../../styles/index';
+
+.complement {
+  @extend %sceneStyle;
+  @include flexbox(column, flex-start, center);
+
+  &-form {
+    @include flexbox(row, space-between, center);
+    width: 300px;
+
+    &-word {
+      font-style: italic;
+    }
+
+    input {
+      width: 150px
+    }
+  }
+
+}

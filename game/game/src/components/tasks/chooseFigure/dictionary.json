@@ -1,0 +1,9 @@
+{
+  "task": [
+    {
+      "url": "./src/components/tasks/chooseFigure/images/triangle.png"
+      , "answer": "Треугольник"
+      , "source": ["Треугольник","Квадрат","Прямоугольник" ,"Тетраэдр"]
+    }
+  ]
+}
