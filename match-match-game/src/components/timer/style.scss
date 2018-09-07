@@ -1,0 +1,10 @@
+@import '../../styles/index';
+
+.timerHud {
+  @include flexbox(column, center, center);
+
+  &__timer::before {
+    content: "Таймер: ";
+  }
+
+}

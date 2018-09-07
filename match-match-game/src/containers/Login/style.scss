@@ -1,0 +1,18 @@
+@import '../../styles/index';
+
+.login-screen {
+  @include flexbox(column, flex-start, center);
+  @extend %sceneStyle;
+
+  form {
+    @include flexbox(row, space-between, center, wrap);
+    width: 410px;
+
+    input
+    ,button {
+      width: 200px;
+      margin-top: 5px;
+    }
+  }
+  
+}

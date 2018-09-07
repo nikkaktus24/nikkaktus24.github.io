@@ -1,0 +1,57 @@
+@import '../../styles/index';
+
+.score-board {
+  @include flexbox(column, flex-start, center);
+  @extend %sceneStyle;
+
+  button {
+    margin-bottom: 25px;
+  }
+
+  &-table {
+    border-radius: 10px;
+    border-spacing: 0;
+    text-align: center;
+    font-size: 15px;
+
+    th {
+      background-color: #ff7f50;
+      color: #fff;
+      text-shadow: 0 1px 1px #000;
+      padding: 10px 35px;
+    }
+
+    th, td {
+      border-style: solid;
+      border-width: 0 1px 1px 0;
+      border-color: #fff;
+    }
+
+    th:first-child {
+      border-top-left-radius: 10px;
+    }
+
+    th:last-child {
+      border-top-right-radius: 10px;
+      border-right: none;
+    }
+
+    td {
+      padding: 5px 15px;
+      background-color: #fff2ed;
+    }
+
+    tr:last-child td:first-child {
+      border-radius: 0 0 0 10px;
+    }
+
+    tr:last-child td:last-child {
+      border-radius: 0 0 10px 0;
+    }
+
+    tr td:last-child {
+      border-right: none;
+    }
+  }
+
+}

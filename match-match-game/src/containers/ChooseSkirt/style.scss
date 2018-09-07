@@ -1,0 +1,34 @@
+@import '../../styles/index';
+
+.skirt {
+  @include flexbox(column, flex-start, center);
+  @extend %sceneStyle;
+
+  &-list {
+    @include flexbox(row, space-between, flex-start);
+    width: 600px;
+
+    li {
+      @extend %card-icon;
+      background: url("../../resources/skirts.png");
+      transition: transform 0.1s linear;
+    }
+
+    li:hover {
+      transform: translateY(5px);
+    }
+
+    li:first-child {
+      @extend %first-pos;
+    }
+
+    li:nth-child(2) {
+      @extend %second-pos;
+    }
+
+    li:nth-child(3) {
+      @extend %third-pos;
+    }
+  }
+
+}

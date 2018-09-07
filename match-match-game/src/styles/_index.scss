@@ -1,0 +1,84 @@
+@mixin flexbox($direction, $justify, $align, $wrap: nowrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
+%sceneStyle {
+  margin-bottom: 25px;
+
+  h1 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  p {
+    margin-bottom: 50px;
+    width: 600px;
+    text-align: center;
+  }
+
+  input {
+    @extend %input-style;
+    border: 2px solid #9198e5;
+  }
+
+}
+
+%list-style {
+  width: 400px;
+  color: #fff;
+
+  li {
+    font-size: 15px;
+    width: 100%;
+    cursor: pointer;
+    -webkit-user-select: none;
+    border-radius: 10px;
+    margin: 1px;
+    padding: 5px 20px;
+    background-color: #ec907e;
+  }
+}
+
+%first-pos {
+  background-position: -25px -395px !important;
+}
+
+%second-pos {
+  background-position: 174px -395px !important;
+}
+
+%third-pos {
+  background-position: 375px -395px !important;
+}
+
+%card-style {
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+
+%input-style {
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.5);
+  font-size: 17px;
+  transition: border 0.3s linear;
+
+  &:focus {
+    border: 2px solid #ea3919;
+  }
+}
+
+%card-icon {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}

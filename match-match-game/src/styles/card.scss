@@ -1,0 +1,49 @@
+@import './index';
+
+.card {
+  width: 175px;
+  height: 225px;
+  position: relative;
+  margin: 10px 5px;
+  cursor: pointer;
+
+  &-front {
+    @include flexbox(column, center, center);
+    @extend %card-style;
+    background-color: #fff;
+    transform: rotateY(180deg);
+
+    &--icon {
+      @extend %card-icon;
+      background-size: contain;
+    }
+  }
+
+  &-back {
+    @include flexbox(column, center, center);
+    @extend %card-style;
+    background-color: #9198e5;
+
+    &--icon {
+      @extend %card-icon;
+      background: url("../resources/skirts.png");
+    }
+  }
+
+}
+
+.skirt-one {
+  @extend %first-pos;
+}
+
+.skirt-two {
+  @extend %second-pos;
+}
+
+.skirt-tree {
+  @extend %third-pos;
+}
+
+.-open {
+ transform: rotateY(360deg);
+}

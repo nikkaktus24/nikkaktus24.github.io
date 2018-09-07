@@ -1,0 +1,24 @@
+@import '../../styles/index';
+
+.navigation-bar {
+  @include flexbox(row, space-between, flex-start);
+  width: 600px;
+  margin-bottom: 30px;
+
+  button {
+    padding: 10px 25px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    -webkit-user-select: none;
+    background-color: #9198e5;
+    transition: all 0.3s linear;
+
+    &:hover {
+      background-image: linear-gradient(#c3c5e5, #9198e5);
+    }
+  }
+
+}

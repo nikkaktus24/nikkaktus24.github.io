@@ -1,0 +1,7 @@
+@import '../../styles/index';
+
+.congratulation {
+  @include flexbox(column, flex-start, center);
+  @extend %sceneStyle;
+
+}

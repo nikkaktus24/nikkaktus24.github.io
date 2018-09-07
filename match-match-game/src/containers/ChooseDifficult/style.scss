@@ -1,0 +1,18 @@
+@import '../../styles/index';
+
+.difficult {
+  @include flexbox(column, flex-start, center);
+  @extend %sceneStyle;
+
+  &-list {
+    @include flexbox(row, space-between, center);
+    width: 500px;
+
+    input
+    ,button {
+      width: 150px;
+      margin-top: 5px;
+    }
+  }
+
+}
