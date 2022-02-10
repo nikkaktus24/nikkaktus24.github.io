@@ -26,7 +26,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^0.28.11",
     "live-server": "^1.2.0",
-    "node-sass": "^4.9.0",
+    "node-sass": "^7.0.0",
     "npm": "^6.1.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
