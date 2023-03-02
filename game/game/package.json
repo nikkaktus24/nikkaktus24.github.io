@@ -27,7 +27,7 @@
     "css-loader": "^0.28.11",
     "live-server": "^1.2.0",
     "node-sass": "^4.9.0",
-    "npm": "^6.1.0",
+    "npm": "^6.14.18",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-redux": "^5.0.7",
